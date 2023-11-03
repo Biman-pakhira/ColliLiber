@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Semester Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+
+        #results {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mock Semester Test</h1>
+        <!-- Timer countdown here -->
+    </header>
+
+    <main>
+        <section id="instructions">
+            <h2>Test Instructions</h2>
+            <p>Read the instructions carefully before starting the test:</p>
+            <ol>
+                <li>This test consists of multiple-choice questions.</li>
+                <li>You have a limited time to complete the test.</li>
+                <li>Click on the option you think is correct for each question.</li>
+                <!-- Add more instructions as needed -->
+            </ol>
+        </section>
+
+        <section id="questions">
+            <!-- Display questions and answer options here -->
+            <div class="question">
+                <p>1. What is the capital of France?</p>
+                <ul>
+                    <li><input type="radio" name="q1" value="a"> a) Paris</li>
+                    <li><input type="radio" name="q1" value="b"> b) Rome</li>
+                    <li><input type="radio" name="q1" value="c"> c) Madrid</li>
+                    <li><input type="radio" name="q1" value="d"> d) London</li>
+                </ul>
+            </div>
+
+            <!-- Add more questions and answer options dynamically -->
+        </section>
+
+        <button id="submit-button">Submit Test</button>
+    </main>
+
+    <footer>
+        <section id="results">
+            <h2>Test Results</h2>
+            <!-- Display results and AI checker feedback here -->
+            <p>Your score: <span id="score">0</span>/10</p>
+            <p>AI feedback: <span id="ai-feedback">Excellent</span></p>
+        </section>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>

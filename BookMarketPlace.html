@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Marketplace</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You would need to create a separate CSS file -->
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        #book-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #book-list li {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .buy-button,
+        .lease-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .buy-button:hover,
+        .lease-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book Marketplace</h1>
+    </header>
+
+    <section id="search-books">
+        <h2>Search for Books</h2>
+        <input type="text" id="book-search" placeholder="Enter book title, author, or ISBN">
+        <button id="search-button">Search</button>
+    </section>
+
+    <section id="book-list">
+        <h2>Available Books</h2>
+        <ul>
+            <!-- Display a list of available books dynamically using JavaScript -->
+            <!-- Each book listing could include book title, author, price, and options to buy or lease -->
+            <li>
+                <h3>Book Title</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $20</p>
+                <button class="buy-button">Buy</button>
+                <button class="lease-button">Lease</button>
+            </li>
+            <!-- Repeat similar list items for other books -->
+        </ul>
+    </section>
+
+    <!-- You can include more sections for user profile, selling books, etc. -->
+
+    <footer>
+        <p>&copy; 2023 Book Marketplace</p>
+    </footer>
+
+    <script>
+        // JavaScript functions for searching books and displaying listings would go here
+    </script>
+</body>
+</html>

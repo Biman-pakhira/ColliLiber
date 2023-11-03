@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Preparation App</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 2;
+            padding: 0px 0px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Updated section selectors to match HTML */
+        #mock-tests {
+            padding: 20px;
+            background-color: lightyellow;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        #book-store {
+            padding: 20px;
+            background-color: lightyellow;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+        }
+        #current-affairs {
+            padding: 20px;
+            background-color: lightyellow;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        section2 {
+            padding: 5px;
+            background-color: navy;
+            margin: 0px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+
+        /* Burger Menu for Mobile */
+        .burger-menu {
+            display: none;
+            cursor: pointer;
+        }
+
+        .bar {
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            margin: 6px 0;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                text-align: center;
+                padding: 0;
+                background-color: darkred;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+            }
+
+            nav ul.show {
+                display: block;
+            }
+
+            nav li {
+                display: block;
+                margin: 0;
+            }
+
+            .burger-menu {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+        }
+
+        /* Rest of your CSS styles */
+        /* ... */
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to ColleLiber</h1>
+        <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Syllabus.html">Syllabus & Study Materials</a></li>
+                <li><a href="MockTest.html">Mock Semester Tests</a></li>
+                <li><a href="Jobs&PlacementPrep.html">Jobs & Placement Preparation</a></li>
+                <li><a href="CurrentAffairs&GK.html">Current Affairs & General Knowledge</a></li>
+                <li><a href="CompetitiveExamPreparation.html">Competitive Exam Preparation</a></li>
+                <li><a href="BookMarketPlace.html">Book Store</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <section id="syllabus">
+        <h2><a href="Syllabus.html">Syllabus & Study Materials</a></h2>
+        <p>This is for Engineering /Medical /Arts /Science /Pharmacy students pursuing Bachelor/Diploma/Masters degrees.</p>
+        <!-- Add content related to syllabus and study materials here -->
+    </section>
+
+    <!-- Updated section3 to use the correct ID -->
+    <section id="mock-tests">
+        <h2><a href="MockTest.html">Mock Semester Tests</a></h2>
+        <p>Check and improve your skills by taking semester mock tests.</p>
+    </section>
+
+    <section id="job-preparation">
+        <h2><a href="Jobs&PlacementPrep.html">Jobs & Placement Preparation</a></h2>
+        <p>Prepare for your job placements with our comprehensive resources.</p>
+    </section>
+
+    <!-- Updated section3 to use the correct ID -->
+    <section id="current-affairs">
+        <h2><a href="CurrentAffairs&GK.html">Current Affairs & General Knowledge</a></h2>
+        <p>Stay updated with current affairs and boost your general knowledge.</p>
+    </section>
+
+    <section id="competitive-exams">
+        <h2><a href="CompetitiveExamPreparation.html">Competitive Exam Preparation</a></h2>
+        <p>Prepare for UPSC, JEE, NEET, CAT, SSC, GATE, IBPS, CEED, LSAT, GRE, GMAT, SBI PO, NDA, CLAT, IIFT, & CMA</p> 
+    </section>
+
+    <!-- Updated section3 to use the correct ID -->
+    <section id="book-store">
+        <h2><a href="BookMarketPlace.html">Book Store</a></h2>
+        <p>A dedicated platform for buying, selling, and leasing books, making it easier for students to access their required reading materials.</p>
+    </section>
+
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="Syllabus.html">Syllabus & Study Materials</a></li>
+                <li><a href="MockTest.html">Mock Semester Tests</a></li>
+                <li><a href="Jobs&PlacementPrep.html">Jobs & Placement Preparation</a></li>
+                <li><a href="CurrentAffairs&GK.html">Current Affairs & General Knowledge</a></li>
+                <li><a href="CompetitiveExamPreparation.html">Competitive Exam Preparation</a></li>
+                <li><a href="BookMarketPlace.html">Book Store</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2023 ColleLiber</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

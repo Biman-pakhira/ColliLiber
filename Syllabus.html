@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Preparation App</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Student Exam Preparation App</h1>
+        <nav>
+            <ul>
+                <li><a href="#syllabus">Syllabus & Study Materials</a></li>
+                <!-- Add other navigation links here -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="syllabus">
+        <h2>Syllabus & Study Materials</h2>
+        <div class="selection-container">
+            <fieldset>
+                <legend>Select Degree Level and Branch:</legend>
+                <div class="degree-selection">
+                    <label for="degree">Select Degree Level:</label>
+                    <select id="degree">
+                        <option value="bachelor">Bachelor</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="masters">Masters</option>
+                    </select>
+                </div>
+                <div class="branch-selection">
+                    <label for "branch">Select Branch:</label>
+                    <select id="branch">
+                        <option value="engineering">Engineering</option>
+                        <option value="medical">Medical</option>
+                        <option value="arts">Arts</option>
+                        <option value="science">Science</option>
+                        <option value="pharmacy">Pharmacy</option>
+                    </select>
+                </div>
+            </fieldset>
+            <button id="fetchButton">Get Syllabus & Study Materials</button>
+        </div>
+        <div id="syllabus-content"></div>
+    </section>
+
+    <!-- Hidden link to another page for "Bachelor" and "Engineering" -->
+    <a id="bachelorEngineeringLink" href="bachelor_engineering.html" style="display: none;"></a>
+
+    <footer>
+        <p>&copy; 2023 Student Exam Preparation App</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const fetchButton = document.getElementById("fetchButton");
+            fetchButton.addEventListener("click", fetchSyllabusAndMaterials);
+        });
+
+        function fetchSyllabusAndMaterials() {
+            const selectedDegree = document.getElementById("degree").value;
+            const selectedBranch = document.getElementById("branch").value;
+
+            if (selectedDegree === "bachelor" && selectedBranch === "engineering") {
+                const link = document.getElementById("bachelorEngineeringLink");
+                window.location.href = link.href;
+            } else {
+                const fetchedData = mockFetchData(selectedDegree, selectedBranch);
+                const syllabusContent = document.getElementById("syllabus-content");
+                syllabusContent.innerHTML = fetchedData;
+            }
+        }
+
+        function mockFetchData(degree, branch) {
+            // Replace with actual data retrieval logic
+            return "Mock data for " + degree + " in " + branch;
+        }
+    </script>
+</body>
+</html>
