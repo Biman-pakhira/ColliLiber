@@ -1,2 +1,2 @@
 # ColliLiber
- Students Exam Prepration application
+ Students Exam Preparation application
