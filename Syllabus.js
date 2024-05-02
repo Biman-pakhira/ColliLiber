@@ -5,81 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Exam Preparation App</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-        }
+    // <style>
+    //     /* Add your CSS styles here */
+    //     body {
+    //         font-family: Arial, sans-serif;
+    //     }
 
-        header {
-            background-color: #3498db;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
+    //     header {
+    //         background-color: #3498db;
+    //         color: #fff;
+    //         text-align: center;
+    //         padding: 20px;
+    //     }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
+    //     nav ul {
+    //         list-style: none;
+    //         padding: 0;
+    //     }
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
+    //     nav ul li {
+    //         display: inline;
+    //         margin-right: 20px;
+    //     }
 
-        nav a {
-            text-decoration: none;
-            color: #fff;
-        }
+    //     nav a {
+    //         text-decoration: none;
+    //         color: #fff;
+    //     }
 
-        section {
-            margin: 20px;
-        }
+    //     section {
+    //         margin: 20px;
+    //     }
 
-        fieldset {
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
+    //     fieldset {
+    //         border: 1px solid #ddd;
+    //         padding: 10px;
+    //         border-radius: 5px;
+    //         margin-bottom: 20px;
+    //     }
 
-        legend {
-            font-weight: bold;
-        }
+    //     legend {
+    //         font-weight: bold;
+    //     }
 
-        .selection-container {
-            display: flex;
-            flex-direction: column;
-        }
+    //     .selection-container {
+    //         display: flex;
+    //         flex-direction: column;
+    //     }
 
-        label, select {
-            margin: 5px 0;
-        }
+    //     label, select {
+    //         margin: 5px 0;
+    //     }
 
-        button {
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
+    //     button {
+    //         background-color: #3498db;
+    //         color: #fff;
+    //         border: none;
+    //         padding: 10px 20px;
+    //         cursor: pointer;
+    //     }
 
-        button:hover {
-            background-color: #2980b9;
-        }
+    //     button:hover {
+    //         background-color: #2980b9;
+    //     }
 
-        #syllabus-content {
-            margin-top: 20px;
-        }
+    //     #syllabus-content {
+    //         margin-top: 20px;
+    //     }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    //     footer {
+    //         background-color: #333;
+    //         color: #fff;
+    //         text-align: center;
+    //         padding: 10px;
+    //     }
+    // </style>
 </head>
 <body>
     <header>
