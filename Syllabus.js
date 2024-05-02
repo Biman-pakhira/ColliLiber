@@ -149,7 +149,6 @@
         }
 
         function mockFetchData(degree, branch) {
-            // Replace with actual data retrieval logic
             return "Mock data for " + degree + " in " + branch;
         }
     </script>
