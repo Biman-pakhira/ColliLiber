@@ -22,12 +22,12 @@ To run this project locally or contribute to it, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/student-exam-preparation.git
+   git clone https://Biman-pakhira/Student-Exam-Preparation-Application.git
    ```
 
 2. **Navigate to the Project Directory**:
    ```bash
-   cd student-exam-preparation
+   cd Student-Exam-Preparation-Application
    ```
 
 3. **Open the Project**:
