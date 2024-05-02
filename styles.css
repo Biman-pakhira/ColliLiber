@@ -1,5 +1,4 @@
  <style>
-        /* CSS Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -82,12 +81,6 @@
             color: white;
         }
 
-        /* Burger Menu for Mobile */
-        .burger-menu {
-            display: none;
-            cursor: pointer;
-        }
-
         .bar {
             width: 30px;
             height: 3px;
@@ -95,7 +88,6 @@
             margin: 6px 0;
         }
 
-        /* Media Query for Mobile */
         @media (max-width: 768px) {
             nav ul {
                 display: none;
@@ -112,15 +104,42 @@
                 display: block;
             }
 
-            nav li {
-                display: block;
-                margin: 0;
-            }
-
             .burger-menu {
                 display: block;
                 position: absolute;
                 top: 20px;
                 right: 20px;
             }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        #book-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #book-list li {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .buy-button,
+        .lease-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .buy-button:hover,
+        .lease-button:hover {
+            background-color: #0056b3;
+        }
+
         }
